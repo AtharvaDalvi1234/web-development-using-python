@@ -1,0 +1,60 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} 
+
+{% block content %}
+    
+<div class="words">
+    <h1 class="heading1">WELCOME TO <br><span> DIGIFX </span></h1>
+    <p>World's top and secure digital trading platform</p>
+    <a href="/trading" class="button">Start trading</a>
+    </div>
+    <div>
+    
+    <div class="coinlist">
+    <div class="coin">
+    <img src="https://pngimg.com/uploads/bitcoin/bitcoin_PNG47.png">
+    <div>
+        <h3>₹<span id="bitcoin"></span></h3>
+        <p>bitcoin</p>
+    </div>
+    </div>
+    <div class="coin">
+        <img src="https://freepngimg.com/thumb/bitcoin/65164-blockchain-cryptocurrency-wallet-ethereum-dogecoin-erc20.png"alt="#">
+        <div>
+            <h3>₹<span id="ethereum"></span></h3>
+            <p>Ethereum</p>
+        </div>
+    </div>
+    <div class="coin">
+        <img src="https://freepngimg.com/download/coin/64001-cryptocurrency-currency-doge-dogecoin-digital-hd-image-free-png.png">
+        <div>
+            <h3>₹<span id="dogecoin"></span></h3>
+            <p>Dogecoin</p>
+        </div>
+    </div>
+    
+    </div>
+    
+    </div>
+    <script>
+    var btc = document.getElementById("bitcoin")
+    var eth = document.getElementById("ethereum")
+    var doge = document.getElementById("dogecoin")
+    var settings = {
+        "async": true,
+        "scross domain" : true,
+        "url" : "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cdogecoin&vs_currencies=inr", 
+        "method": "GET",
+        "headers": {}
+    }
+    $.ajax(settings).done(function(response){
+    
+        btc.innerHTML = response.bitcoin.inr;
+        eth.innerHTML = response.ethereum.inr;
+        doge.innerHTML = response.dogecoin.inr;
+        
+    
+    });
+    
+    </script>
+   
+{% endblock %}

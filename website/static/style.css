@@ -1,0 +1,134 @@
+
+.form-control{
+
+    border-radius: 15px;
+    border-color: aqua;
+    border-width: .10em;
+    width: 249px;
+}
+
+h3{
+
+padding: 67px 0px;
+color: white;
+font-size: 3.5rem;
+
+}
+
+.form-group{
+    color: white;
+    
+}
+
+
+.view{
+    content: "";
+ /* position: absolute ; */
+height: 100vh;
+
+opacity: 0.85;
+z-index: -1;
+overflow: hidden;
+}
+
+.words{
+
+    color: white;
+    padding: 25% 0%;
+
+}
+
+.words h1{
+
+font-size: 3.5rem;
+
+}
+
+.words h1 span{
+
+    color: #ff960b;
+
+}
+
+.button{
+  
+    display: inline-block;
+    margin-top: 30px;
+    background: #ff960b;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: white;
+
+
+
+
+}
+
+.button:hover{
+
+
+    text-decoration: none;
+    color: white;
+    background: #c87902;
+
+}
+
+.coinlist{
+
+    position: absolute;
+    right: 10%;
+    bottom: 50%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.coin{
+
+
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin: 0px 15px;
+    color: #ebebeb;
+    border: 1px solid #ff960b;
+    padding: 20px 30px;
+    border-radius: 8px;
+
+}
+.coin h3{
+
+
+    font-size: 20px;
+    padding: 20px 0px;
+
+}
+.coin img{
+
+    width: 60px;
+    margin-right: 10px;
+
+}
+
+.alt a{
+
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0px 7px;
+
+
+
+
+
+}
+
+.img45{
+
+width: 60px;
+position: absolute;
+
+
+
+}

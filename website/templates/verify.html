@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block title %}verfication{% endblock %} 
+
+{% block content %}
+
+<div style="background-color:rgb(6, 6, 16) ; height: 75vh;border: 1px solid #ff960b;">
+    <form action="/validate" method="POST",  style=" width: 50vw; margin-left : 25vw;">
+        <h3 >OTP Verification</h3>
+        <div class="form-group">
+          <label for="email">An otp has been send to your email address</label>
+          <input
+            type="number"
+            class="form-control"
+            id="otp"
+            name="otp"
+            placeholder="Enter otp"
+          />
+       
+        </div>
+        
+        
+        <button type="submit" class="btn btn-primary" style="width:17vw ;">submit</button>
+      </form>
+    </div>
+
+{% endblock %}
